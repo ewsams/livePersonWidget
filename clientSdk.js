@@ -30,7 +30,6 @@ var onSuccess = function(data) {
             if (this.readyState == 4 && this.status == 200) {
                 // Typical action to be performed when the document is ready:
                 document.getElementById("info").innerHTML = xhttp.responseText;
-                //document.getElementById("info").innerHTML = JSON.stringify("Antes de :D " + data);;
             }
         };
         xhttp.open("GET", `https://www.omdbapi.com/?apikey=4f07baaf&s=${q}`, true);
